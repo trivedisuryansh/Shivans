@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saree Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <header>
+        <div class="logo-header">
+            <img src="images/rounded_logo_resized.png" alt="Radhika Sarees Logo" class="logo">
+            <h1>Welcome to Radhika Sarees</h1>
+        </div>
+        <nav>
+            <a href="#" onclick="openPanel('login-panel')">Login</a>
+            <a href="#" onclick="openPanel('register-panel')">Register</a>
+        </nav>
+    </header>
+
+    <!-- Products Section -->
+    <section id="products">
+        <h2>Our Collection</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/Beige and Cream Vintage Pongal Saree.jpg" alt="Saree 1">
+                <h3>Beige and Cream Vintage Bridal Saree</h3>
+                <p>A luxurious silk saree adorned with intricate traditional motifs. Ideal for weddings and special occasions, this saree offers a classic and elegant look.</p>
+                <a href="https://wa.me/9557410173" class="contact-button">Contact Us</a>
+            </div>
+
+            <div class="product-card">
+                <img src="images/Beige vintage saree.jpg" alt="Saree 2">
+                <h3>Graceful Banarasi Red Bridal Saree</h3>
+                <p>This Banarasi saree showcases rich, golden embroidery and a stunning red color. Perfect for a bridal look or festive celebrations, this saree embodies regal charm.</p>
+                <a href="https://wa.me/9557410173" class="contact-button">Contact Us</a>
+            </div>
+
+            <div class="product-card">
+                <img src="images/Bluee Indian.jpg" alt="Saree 3">
+                <h3>Blue Ombre Georgette Party Saree</h3>
+                <p>Lightweight and modern, this georgette saree features a blue ombre design, perfect for evening parties and events. Its flowy texture ensures comfort and elegance.</p>
+                <a href="https://wa.me/9557410173" class="contact-button">Contact Us</a>
+            </div>
+
+            <div class="product-card">
+                <img src="images/Red Saree.jpg" alt="Saree 4">
+                <h3>Royal Red Wedding Georgette Saree</h3>
+                <p>Designed for the modern bride, this georgette saree combines lightweight fabric with rich embroidery, making it ideal for weddings or grand events.</p>
+                <a href="https://wa.me/9557410173" class="contact-button">Contact Us</a>
+            </div>
+
+            <div class="product-card">
+                <img src="images/White Vintage Saree.jpg" alt="Saree 5">
+                <h3>Elegant Cream and Gold Printed Saree</h3>
+                <p>A simple yet striking saree with cream and gold floral prints, perfect for festive occasions and day-time events. Its minimalistic design ensures versatility and grace.</p>
+                <a href="https://wa.me/9557410173" class="contact-button">Contact Us</a>
+            </div>
+
+            <div class="product-card">
+                <img src="images/RADHIKA (1).jpg" alt="Saree 6">
+                <h3>Pink Floral Embroidery Saree</h3>
+                <p>This beautiful saree showcases intricate floral embroidery on a soft pink fabric. Its subtle charm and elegant detailing make it perfect for daytime events or semi-formal gatherings.</p>
+                <a href="https://wa.me/9557410173" class="contact-button">Contact Us</a>
+            </div>
+
+            <div class="product-card">
+                <img src="images/RADHIKA (2).jpg" alt="Saree 7">
+                <h3>Cream Wedding Saree</h3>
+                <p>Featuring a cream base with golden accents, this wedding saree is both elegant and sophisticated. Ideal for brides or guests seeking a timeless look, it balances tradition with modernity.</p>
+                <a href="https://wa.me/9557410173" class="contact-button">Contact Us</a>
+            </div>
+
+            <div class="product-card">
+                <img src="images/RADHIKA (3).jpg" alt="Saree 8">
+                <h3>Yellow Flourish Saree</h3>
+                <p>This vibrant yellow saree with intricate floral designs radiates joy and energy. Perfect for festive occasions or day-time functions, it adds a bright and cheerful touch to your wardrobe.</p>
+                <a href="https://wa.me/9557410173" class="contact-button">Contact Us</a>
+            </div>
+
+            <div class="product-card">
+                <img src="images/RADHIKA.jpg" alt="Saree 9">
+                <h3>Light Pink Saree</h3>
+                <p>Crafted from light and breezy fabric, this light pink saree is an ideal choice for summer events. Its delicate and minimalistic design ensures you stay stylish and comfortable.</p>
+                <!-- Replace the previous Contact Us button with the following in each product card -->
+                <a href="https://wa.me/9557410173" class="contact-button">Contact Us</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sliding Login Panel -->
+    <div id="login-panel" class="sliding-panel">
+        <div class="panel-content">
+            <span class="close" onclick="closePanel('login-panel')">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" required>
+
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sliding Register Panel -->
+    <div id="register-panel" class="sliding-panel">
+        <div class="panel-content">
+            <span class="close" onclick="closePanel('register-panel')">&times;</span>
+            <h2>Register</h2>
+            <form id="register-form">
+                <label for="reg-username">Username:</label>
+                <input type="text" id="reg-username" required>
+
+                <label for="reg-email">Email:</label>
+                <input type="email" id="reg-email" required>
+
+                <label for="reg-password">Password:</label>
+                <input type="password" id="reg-password" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+        <div class="contact-card">
+            <h3>Get in Touch</h3>
+            <p><strong>Phone:</strong> <a href="tel:+918696906919">+91 8696906919</a></p>
+            <p><strong>Email:</strong> <a href="mailto:shivansawasthi@gmail.com">shivansawasthi@gmail.com</a></p>
+            <p><strong>Visit Us:</strong> 1st Floor, Mithla Tower, Kanpur Road, Auraiya</p>
+        </div>
+    </div>
+</section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
